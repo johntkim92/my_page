@@ -1,9 +1,15 @@
 var game = {
   boardClick: function () {
+    var clicks = 0;
     var cell = $('.cell');
     cell.click(function () {
-      console.log("hi");
-      $(this).text('x');
+      if (clicks === 0 || clicks%2 === 0) {
+      $(this).text('X');
+      clicks += 1;
+    } else {
+      $(this).text('O');
+      clicks += 1;
+    };
     });
 
   },
@@ -11,10 +17,13 @@ var game = {
 };
 
 var player1 = {
-
+  moves: 0,
+  wins: 0,
 };
 
 var play2 = {
+  moves: 0,
+  wins: 0,
 
 };
 var reset = {
