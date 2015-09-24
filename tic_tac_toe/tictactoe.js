@@ -1,11 +1,13 @@
 var game = {
   boardClick: function () {
-    var board = $('.full-block');
-    board.on('click', function (e) {
-      e.html('X');
-      e.append();
-    })
-  }
+    var cell = $('.cell');
+    cell.click(function () {
+      console.log("hi");
+      $(this).text('x');
+    });
+
+  },
+
 };
 
 var player1 = {
@@ -27,6 +29,19 @@ var reset = {
       cells.text('');
     });
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 };
 
