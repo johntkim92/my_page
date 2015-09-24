@@ -26,3 +26,8 @@ body {
   border-top: 3px solid #9400D3;
   border-bottom: 3px solid #9400D3;
 }
+.p1, .p2 {
+  font-family: 'Black Ops One', cursive;
+  color: #FF00FF;
+  margin: 10px;
+}
