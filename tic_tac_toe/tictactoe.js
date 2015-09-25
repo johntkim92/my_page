@@ -11,6 +11,13 @@ var wins = [
 ];
 
 var game = {
+  X: 'X',
+  O: 'O',
+  Empty: '',
+
+  currentPlayer: X,
+  moves: 0,
+
   boardClick: function () {
     var clicks = 0;
     var cell = $('.cell');
@@ -28,6 +35,17 @@ var game = {
       });
     });
   },
+
+  displayInstructions: function (instructions) {
+    $('.instructions').html(instructions);
+  },
+
+  switchPlayer: function () {
+    currentPlayer = (currentPlayer === X) ? O : X;
+    displayInstructions('Current Move: ' + currenPlayer);
+  },
+
+  
 };
 
 
