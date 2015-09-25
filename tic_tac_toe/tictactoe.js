@@ -30,9 +30,9 @@ var game = {
       $(this).text('O');
       clicks += 1;
       };
-      $(this).one('click', function () {
-        alert("That cell is already filled");
-      });
+      // $(this).one('click', function () {
+      //   alert("That cell is already filled");
+      // });
     });
   },
 
@@ -45,7 +45,16 @@ var game = {
     displayInstructions('Current Move: ' + currenPlayer);
   },
 
-  
+  doubleClick: function (index) {
+    if (board[index] === Empty) {
+      return true;
+    } else {
+      displayInstructions('That cell is already filled');
+      return false;
+    };
+  },
+
+
 };
 
 
