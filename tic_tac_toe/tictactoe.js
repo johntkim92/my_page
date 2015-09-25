@@ -26,12 +26,47 @@ var game = {
       if (clicks === 0 || clicks%2 === 0) {
         target.text('X');
         clicks += 1;
-        if ($(this) == $('#0')) {
-          console.log('hi');
+        if (target.is('#0')) {
+          board[0] = 'X';
+        } else if (target.is('#1')) {
+          board[1] = 'X';
+        } else if (target.is('#2')) {
+          board[2] = 'X';
+        } else if (target.is('#3')) {
+          board[3] = 'X';
+        } else if (target.is('#4')) {
+          board[4] = 'X';
+        } else if (target.is('#5')) {
+          board[5] = 'X';
+        } else if (target.is('#6')) {
+          board[6] = 'X';
+        } else if (target.is('#7')) {
+          board[7] = 'X';
+        } else if (target.is('#8')) {
+          board[8] = 'X';
         };
       } else {
       target.text('O');
       clicks += 1;
+      if (target.is('#0')) {
+        board[0] = 'O';
+      } else if (target.is('#1')) {
+        board[1] = 'O';
+      } else if (target.is('#2')) {
+        board[2] = 'O';
+      } else if (target.is('#3')) {
+        board[3] = 'O';
+      } else if (target.is('#4')) {
+        board[4] = 'O';
+      } else if (target.is('#5')) {
+        board[5] = 'O';
+      } else if (target.is('#6')) {
+        board[6] = 'O';
+      } else if (target.is('#7')) {
+        board[7] = 'O';
+      } else if (target.is('#8')) {
+        board[8] = 'O';
+      };
     };
 
     });
