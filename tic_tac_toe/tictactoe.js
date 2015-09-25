@@ -16,6 +16,7 @@ var game = {
     var cell = $('.cell');
     cell.click(function () {
       if (clicks === 0 || clicks%2 === 0) {
+
       $(this).text('X');
       clicks += 1;
       } else {
@@ -51,6 +52,7 @@ var reset = {
       p1Wins.text('Player 1 Wins: 0');
       p2Wins.text('Player 2 Wins: 0');
       cells.text('');
+      board = [];
     });
   },
 
