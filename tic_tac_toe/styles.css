@@ -7,6 +7,10 @@ body {
   text-align: center;
   font-size: 50px;
 }
+.instructions {
+  text-align: center;
+  padding: 1em;
+}
 .full-block {
   margin: 0 auto;
   font-family: 'Crafty Girls', cursive;

@@ -9,30 +9,31 @@ var wins = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+var playerX = 'X',
+    PlayerO = 'O',
+    cellEmpty = '',
+    currentPlayer = playerX,
+    moves = 0;
 
 var game = {
-  X: 'X',
-  O: 'O',
-  Empty: '',
 
-  currentPlayer: X,
-  moves: 0,
 
   boardClick: function () {
     var clicks = 0;
     var cell = $('.cell');
-    cell.click(function () {
+    cell.click(function (event) {
+      var target = $(event.target);
       if (clicks === 0 || clicks%2 === 0) {
-
-      $(this).text('X');
-      clicks += 1;
+        target.text('X');
+        clicks += 1;
+        if ($(this) == $('#0')) {
+          console.log('hi');
+        };
       } else {
-      $(this).text('O');
+      target.text('O');
       clicks += 1;
-      };
-      // $(this).one('click', function () {
-      //   alert("That cell is already filled");
-      // });
+    };
+
     });
   },
 
@@ -42,11 +43,11 @@ var game = {
 
   switchPlayer: function () {
     currentPlayer = (currentPlayer === X) ? O : X;
-    displayInstructions('Current Move: ' + currenPlayer);
+    displayInstructions('Current Move: ' + currentPlayer);
   },
 
   doubleClick: function (index) {
-    if (board[index] === Empty) {
+    if (board[index] === cellEmpty) {
       return true;
     } else {
       displayInstructions('That cell is already filled');
@@ -59,16 +60,6 @@ var game = {
 
 
 
-var player1 = {
-  moves: 0,
-  wins: 0,
-};
-
-var play2 = {
-  moves: 0,
-  wins: 0,
-
-};
 var reset = {
   resetClick: function () {
     var reset = $('.reset');
