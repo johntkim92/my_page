@@ -15,6 +15,8 @@ var playerX = 'X',
     currentPlayer = playerX,
     moves = 0;
 
+
+
 var game = {
 
 
@@ -46,28 +48,28 @@ var game = {
           board[8] = 'X';
         };
       } else {
-      target.text('O');
-      clicks += 1;
-      if (target.is('#0')) {
-        board[0] = 'O';
-      } else if (target.is('#1')) {
-        board[1] = 'O';
-      } else if (target.is('#2')) {
-        board[2] = 'O';
-      } else if (target.is('#3')) {
-        board[3] = 'O';
-      } else if (target.is('#4')) {
-        board[4] = 'O';
-      } else if (target.is('#5')) {
-        board[5] = 'O';
-      } else if (target.is('#6')) {
-        board[6] = 'O';
-      } else if (target.is('#7')) {
-        board[7] = 'O';
-      } else if (target.is('#8')) {
-        board[8] = 'O';
+        target.text('O');
+        clicks += 1;
+        if (target.is('#0')) {
+          board[0] = 'O';
+        } else if (target.is('#1')) {
+          board[1] = 'O';
+        } else if (target.is('#2')) {
+          board[2] = 'O';
+        } else if (target.is('#3')) {
+          board[3] = 'O';
+        } else if (target.is('#4')) {
+          board[4] = 'O';
+        } else if (target.is('#5')) {
+          board[5] = 'O';
+        } else if (target.is('#6')) {
+          board[6] = 'O';
+        } else if (target.is('#7')) {
+          board[7] = 'O';
+        } else if (target.is('#8')) {
+          board[8] = 'O';
+        };
       };
-    };
 
     });
   },
@@ -93,7 +95,21 @@ var game = {
 
 };
 
+var getWinner = function(board) {
+  for (var i=0; i < wins.length; i++) {
+    var a,
+        b,
+        c;
+    a = board[(wins[i][0])];
+    b = board[(wins[i][1])];
+    c = board[(wins[i][2])];
 
+    if (a == b && a == c && a != 0) {
+      return a;
+    }
+  }
+  return false;
+};
 
 var reset = {
   resetClick: function () {
