@@ -29,190 +29,211 @@ var game = {
       if (clicks === 0 || clicks%2 === 0) {
         target.text('X');
         clicks += 1;
+        $('.current-player').text('Current Player: O');
+        $('.instructions').text(' ');
         if (target.is('#0')) {
           board[0] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
-
         } else if (target.is('#1')) {
           board[1] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#2')) {
           board[2] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#3')) {
           board[3] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#4')) {
           board[4] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#5')) {
           board[5] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#6')) {
           board[6] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#7')) {
           board[7] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#8')) {
           board[8] = 'X';
           if (getWinner(board) === 'X') {
-            console.log('hi');
             $('.instructions').text('Player X Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         };
       } else {
         target.text('O');
         clicks += 1;
+        $('.current-player').text('Current Player: X');
+        $('.instructions').text(' ');
         if (target.is('#0')) {
           board[0] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#1')) {
           board[1] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#2')) {
           board[2] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#3')) {
           board[3] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#4')) {
           board[4] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#5')) {
           board[5] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#6')) {
           board[6] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#7')) {
           board[7] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         } else if (target.is('#8')) {
           board[8] = 'O';
           if (getWinner(board) === 'O') {
-            console.log('hi');
             $('.instructions').text('Player O Wins!');
             cell.off('click');
+            $('.current-player').text(' ');
           } else if (clicks === 9 && getWinner(board) !== 'X' && getWinner(board) !== 'O') {
             $('.instructions').text("It's a Tie!");
             cell.off('click');
+            $('.current-player').text(' ');
           }
         };
       };
@@ -268,6 +289,7 @@ var reset = {
       p2Wins.text('Player 2 Wins: 0');
       cells.text('');
       board = [];
+      window.location.reload();
     });
   },
 
