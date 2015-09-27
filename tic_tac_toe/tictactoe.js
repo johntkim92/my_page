@@ -13,7 +13,8 @@ var playerX = 'X',
     PlayerO = 'O',
     cellEmpty = '',
     currentPlayer = playerX,
-    moves = 0;
+    moves = 0,
+    clicks = 0;
 
 
 
@@ -21,7 +22,7 @@ var game = {
 
 
   boardClick: function () {
-    var clicks = 0;
+
     var cell = $('.cell');
     cell.click(function (event) {
       var target = $(event.target);
@@ -33,12 +34,14 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
           };
         } else if (target.is('#1')) {
           board[1] = 'X';
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#2')) {
@@ -46,6 +49,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#3')) {
@@ -53,6 +57,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#4')) {
@@ -60,6 +65,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#5')) {
@@ -67,6 +73,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#6')) {
@@ -74,6 +81,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#7')) {
@@ -81,6 +89,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#8')) {
@@ -88,6 +97,7 @@ var game = {
           if (getWinner(board) === 'X') {
             console.log('hi');
             $('.instructions').text('Player X Wins!');
+            cell.off('click');
 
           };
         };
@@ -99,6 +109,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#1')) {
@@ -106,6 +117,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#2')) {
@@ -113,6 +125,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#3')) {
@@ -120,6 +133,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#4')) {
@@ -127,6 +141,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#5')) {
@@ -134,6 +149,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#6')) {
@@ -141,6 +157,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#7')) {
@@ -148,6 +165,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         } else if (target.is('#8')) {
@@ -155,6 +173,7 @@ var game = {
           if (getWinner(board) === 'O') {
             console.log('hi');
             $('.instructions').text('Player O Wins!');
+            cell.off('click');
 
           };
         };
