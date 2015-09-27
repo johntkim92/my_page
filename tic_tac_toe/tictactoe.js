@@ -216,7 +216,7 @@ var game = {
           }
         };
       };
-
+      target.off('click');
     });
   },
 
