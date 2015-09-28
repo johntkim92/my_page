@@ -9,12 +9,54 @@ var wins = [
   [0, 4, 8],
   [2, 4, 6],
 ];
-var playerX = 'X',
-    PlayerO = 'O',
-    cellEmpty = '',
-    currentPlayer = playerX,
-    moves = 0,
-    clicks = 0;
+
+var highlightWinner = function () {
+  if (($('#0').text() === 'X' && $('#1').text() === 'X' && $('#2').text() === 'X') || (($('#0').text() === 'O' && $('#1').text() === 'O' && $('#2').text() === 'O')))           {
+    $('#0').addClass('highlight');
+    $('#1').addClass('highlight');
+    $('#2').addClass('highlight');
+  } else if (($('#3').text() === 'X' && $('#4').text() === 'X' && $('#5').text() === 'X') || (($('#3').text() === 'O' && $('#4').text() === 'O' && $('#5').text() === 'O')))
+  {
+    $('#3').addClass('highlight');
+    $('#4').addClass('highlight');
+    $('#5').addClass('highlight');
+  } else if (($('#6').text() === 'X' && $('#7').text() === 'X' && $('#8').text() === 'X') || (($('#6').text() === 'O' && $('#7').text() === 'O' && $('#8').text() === 'O')))
+  {
+    $('#6').addClass('highlight');
+    $('#7').addClass('highlight');
+    $('#8').addClass('highlight');
+  } else if (($('#0').text() === 'X' && $('#3').text() === 'X' && $('#6').text() === 'X') || (($('#0').text() === 'O' && $('#3').text() === 'O' && $('#6').text() === 'O')))
+  {
+    $('#0').addClass('highlight');
+    $('#3').addClass('highlight');
+    $('#6').addClass('highlight');
+  } else if (($('#1').text() === 'X' && $('#4').text() === 'X' && $('#7').text() === 'X') || (($('#1').text() === 'O' && $('#4').text() === 'O' && $('#7').text() === 'O')))
+  {
+    $('#1').addClass('highlight');
+    $('#4').addClass('highlight');
+    $('#7').addClass('highlight');
+  } else if (($('#2').text() === 'X' && $('#5').text() === 'X' && $('#8').text() === 'X') || (($('#2').text() === 'O' && $('#5').text() === 'O' && $('#8').text() === 'O')))
+  {
+    $('#2').addClass('highlight');
+    $('#5').addClass('highlight');
+    $('#8').addClass('highlight');
+  } else if (($('#0').text() === 'X' && $('#4').text() === 'X' && $('#8').text() === 'X') || (($('#0').text() === 'O' && $('#4').text() === 'O' && $('#8').text() === 'O')))
+  {
+    $('#0').addClass('highlight');
+    $('#4').addClass('highlight');
+    $('#8').addClass('highlight');
+  } else if (($('#2').text() === 'X' && $('#4').text() === 'X' && $('#6').text() === 'X') || (($('#2').text() === 'O' && $('#4').text() === 'O' && $('#6').text() === 'O')))
+  {
+    $('#2').addClass('highlight');
+    $('#4').addClass('highlight');
+    $('#6').addClass('highlight');
+  }
+};
+
+var a,
+    b,
+    c;
+var clicks = 0;
 
 
 
@@ -238,41 +280,23 @@ var game = {
         };
       };
       target.off('click');
+      highlightWinner();
     });
-  },
-
-  displayInstructions: function (instructions) {
-    $('.instructions').html(instructions);
-  },
-
-  switchPlayer: function () {
-    currentPlayer = (currentPlayer === X) ? O : X;
-    displayInstructions('Current Move: ' + currentPlayer);
-  },
-
-  doubleClick: function (index) {
-    if (board[index] === cellEmpty) {
-      return true;
-    } else {
-      displayInstructions('That cell is already filled');
-      return false;
-    };
-  },
-
-
+  }
 };
 
 var getWinner = function(board) {
   for (var i=0; i < wins.length; i++) {
-    var a,
-        b,
-        c;
+    // var a,
+    //     b,
+    //     c;
     a = board[(wins[i][0])];
     b = board[(wins[i][1])];
     c = board[(wins[i][2])];
 
     if (a == b && a == c && a != 0) {
       return a;
+      return i;
     }
   }
   return false;
@@ -281,14 +305,7 @@ var getWinner = function(board) {
 var reset = {
   resetClick: function () {
     var reset = $('.reset');
-    var p1Wins = $('.p1');
-    var p2Wins = $('.p2');
-    var cells = $('.cell');
     reset.on('click', function (e) {
-      p1Wins.text('Player 1 Wins: 0');
-      p2Wins.text('Player 2 Wins: 0');
-      cells.text('');
-      board = [];
       window.location.reload();
     });
   },

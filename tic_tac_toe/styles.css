@@ -27,6 +27,7 @@ body {
 .cell {
   width: 100px;
   height: 100px;
+  text-align: center;
 }
 .a {
   border-left: 3px solid #800080;
@@ -40,4 +41,8 @@ body {
   font-family: 'Black Ops One', cursive;
   color: #FF00FF;
   margin: 10px;
+}
+
+.highlight {
+  color: blue;
 }
