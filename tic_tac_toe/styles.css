@@ -113,3 +113,6 @@ body {
 	position:relative;
 	top:1px;
 }
+audio {
+  background-color: #00FFFF;
+}
