@@ -3,3 +3,6 @@ http://jsfiddle.net/rtoal/ThPEH/
 
 http://codereview.stackexchange.com/questions/86534/tic-tac-toe-in-javascript
 array solution
+
+http://www.bestcssbuttongenerator.com/#/31
+button styling
