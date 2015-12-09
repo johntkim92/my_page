@@ -4,18 +4,6 @@ body {
   background: linear-gradient(to left, #1CD8D2 , #93EDC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1 {
-  color: blue;
-}
-
-#header {
-  margin-top: 80px;
-  color: pink;
-}
-
-h3 {
-  font-family: 'Orbitron', sans-serif;
-}
 /*greg*/
 * {
   padding: 0;
@@ -71,18 +59,11 @@ h1 a {
   padding-top: 100px;
 }
 
-
-
 #logo-name {
   float: left;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-#logo-name h3 {
-  color: black;
-  margin-top: -2px;
 }
 
 /*http://bradsknutson.com/blog/css-sliding-underline/*/
@@ -110,7 +91,7 @@ h1 a {
 .image {
     height: 500px;
     width: 100%;
-    background: #55e6c5;
+    /*background: #55e6c5;*/
     z-index: 1;
     }
 
@@ -157,15 +138,6 @@ h1 a {
   color: white;
   text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
-
-/*.wall-span {
-  position: relative;
-  top: 20%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: white;
-  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-}*/
 
 #content_1 {position: relative;}
 
