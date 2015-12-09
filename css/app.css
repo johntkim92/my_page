@@ -45,6 +45,10 @@ nav {
     opacity: 0;
 }
 
+.nav-down {
+  z-index: 4;
+}
+
 ul {
   text-align: right;
 }
@@ -55,6 +59,16 @@ ul li {
   margin-right: 20px;
   font-weight: 300;
   /*transition: .2s;*/
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 a {
+  /*margin-top: 100px;*/
+  padding-top: 100px;
 }
 
 
@@ -143,6 +157,15 @@ ul li {
   color: white;
   text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
+
+/*.wall-span {
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}*/
 
 #content_1 {position: relative;}
 
