@@ -112,13 +112,18 @@ h1 a {
     padding-top: 20px;
     /*padding-bottom: 20px;*/
     text-align: center;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                     0px -5px 35px rgba(255,255,255,0.3);
 }
 .content p {
-    font-size:20px;
+    font-size:25px;
     /*color: #343434;*/
     /*font-family: 'Open Sans', sans-serif;*/
     font-weight: 300;
-    margin: 30px 60px;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 20px;
+    text-align: center;
 }
 #wall_1 {
     background: url('../images/bg2.jpg') repeat;
@@ -148,30 +153,50 @@ h1 a {
 #content_1 {
   position: relative;
   color: #010754;
-  background: #BBBBBB;
+  /*background: #BBBBBB;*/
+  background-image:
+   linear-gradient(
+     #010754,
+     #BDBDBD 40%,
+     #66545E
+   );
+
 }
 
 #content_1 h1 {
-  color: black;
+  color: #BDBDBD;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #content_2 {
-  color: #AA6F73;
-  background: #EEA990;
+  color: #66545E;
+  /*background: #EEA990;*/
+  background-image:
+   linear-gradient(
+     #66545E,
+     #EEA990 40%,
+     #B6D8D7
+   );
 }
 
 #content_2 h1 {
-  color: #66545E;
+  color: #EEA990;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #content_3 {
   color: #E9B8BC;
-  E9B8BC
-  background: #FCF2D3;
+  /*background: #FCF2D3;*/
+  background-image:
+   linear-gradient(
+     #B6D8D7,
+     #FCF2D3 40%
+   );
 }
 
 #content_3 h1 {
-  color: #B6D8D7;
+  color: #FCF2D3;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1::first-letter {
@@ -179,6 +204,144 @@ h1::first-letter {
     font-weight: 600;
     /*color:#66545E;*/
 }
+
+/* project table */
+
+
+
+.project-grid {
+	margin: 1em auto;
+	max-width: 1106px;
+	text-align: center;
+}
+
+.project-grid li {
+	border: 5px solid white;
+	display: inline-block;
+	margin: 1em;
+	width: 289px;
+}
+
+.project-grid img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.project-grid project {
+	height: 163px;
+	overflow: hidden;
+	position: relative;
+	width: 289px;
+}
+
+.project-grid project-caption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.project-grid project-caption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	vertical-align: middle;
+}
+
+
+.project-grid project-caption h6 {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	vertical-align: middle;
+}
+
+.project-grid li:hover project-caption {
+	opacity: 1;
+}
+
+.project-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+}
+
+.project-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+.project-grid project-caption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.project-grid project-caption h6 {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.project-grid li:hover project-caption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+.project-grid li:hover project-caption h6 {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+.project-grid project-caption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+/* end Project table*/
+
+
 
 /*cont-1 {
   font-size: 60px;
