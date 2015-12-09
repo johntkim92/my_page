@@ -1,0 +1,137 @@
+body {
+  background: #1CD8D2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1CD8D2 , #93EDC7); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1CD8D2 , #93EDC7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  color: blue;
+}
+
+#header {
+  margin-top: 80px;
+  color: pink;
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+/*greg*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    height: 80px;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+    padding: 30px;
+}
+
+.nav-up {
+    top: -80px;
+    opacity: 0;
+}
+
+ul {
+  text-align: right;
+}
+
+ul li {
+  /*display: inline;*/
+  color: black;
+  margin-right: 20px;
+  font-weight: 300;
+  /*transition: .2s;*/
+}
+
+
+
+#logo-name {
+  float: left;
+}
+
+#logo-name h3 {
+  color: black;
+  margin-top: -2px;
+}
+
+/*http://bradsknutson.com/blog/css-sliding-underline/*/
+.nav-hover-slide {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.nav-hover-slide:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .3s ease, background-color .3s ease;
+}
+.nav-hover-slide:hover:after {
+	width: 100%;
+	background: pink;
+}
+
+/* parallax */
+
+.image {
+    height: 500px;
+    width: 100%;
+    background: #55e6c5;
+    z-index: 1;
+    }
+
+.content {
+    height: 750px;
+    width:100%;
+    background: white;
+    z-index: 2;
+}
+.content h1 {
+    font-size: 40px;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0px 60px;
+}
+.content p {
+    font-size:20px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 30px 60px;
+}
+#wall_1 {
+    background: url('../images/bg2.jpg') repeat;
+    background-attachment: fixed;
+}
+#wall_2 {
+    background: url('../images/bg.gif') repeat;
+    background-attachment: fixed;
+}
+#wall_3 {
+    background: url('../images/bg3.jpg') repeat;
+    background-attachment: fixed;
+
+}
+
+#content_1 {position: relative;}
+
+h1::first-letter {
+    font-size: 60px;
+    font-weight: 600;
+    color:#3cb0f8;
+}
+
+/* end parallax */

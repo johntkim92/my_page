@@ -4,8 +4,7 @@ $("#header").click(function() {
 
 // Code addapted from Marius Craciunoiu
 // https://medium.com/@mariusc23
-// Photography by Matthias Heiderich
-// http://www.matthias-heiderich.de/
+
 
 var didScroll,
     lastScrollTop = 0,
@@ -34,16 +33,16 @@ function hasScrolled() {
 
         // Scroll Down
         $('nav').removeClass('nav-down').addClass('nav-up');
-        console.log('----------nav-up-----------');
-        console.log("Current Scroll " + st);
-        console.log("Last Scroll " + lastScrollTop);
+        // console.log('----------nav-up-----------');
+        // console.log("Current Scroll " + st);
+        // console.log("Last Scroll " + lastScrollTop);
 
     } else {
         // Scroll Up
             $('nav').removeClass('nav-up').addClass('nav-down');
-            console.log('----------nav-down---------');
-            console.log("Current Scroll " + st);
-            console.log("Last Scroll " + lastScrollTop);
+            // console.log('----------nav-down---------');
+            // console.log("Current Scroll " + st);
+            // console.log("Last Scroll " + lastScrollTop);
     }
 
     lastScrollTop = st;
@@ -65,3 +64,26 @@ $(function() {
     }
   });
 });
+
+// parallax js
+$(document).ready(function() {
+    $(window).stellar();
+
+});
+
+$(document).ready(
+
+  function() {
+
+    $("html").niceScroll({
+        cursorcolor:"rgba(30,30,30,.5)",
+        zindex:999,
+        scrollspeed:100,
+        mousescrollstep:50,
+        cursorborder:"0px solid #fff",
+    });
+
+
+  }
+
+);
