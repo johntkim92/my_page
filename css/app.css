@@ -113,7 +113,8 @@ h1 a {
     /*padding-bottom: 20px;*/
     text-align: center;
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                     0px -5px 35px rgba(255,255,255,0.3);
+                 0px -5px 35px rgba(255,255,255,0.3);
+
 }
 .content p {
     font-size:25px;
@@ -152,7 +153,7 @@ h1 a {
 
 #content_1 {
   position: relative;
-  color: #010754;
+
   /*background: #BBBBBB;*/
   background-image:
    linear-gradient(
@@ -160,12 +161,28 @@ h1 a {
      #BDBDBD 40%,
      #66545E
    );
+   /*color: black;*/
+/*-webkit-text-fill-color: #BDBDBD;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #010754;*/
+}
+
+#content_1 p {
+  color: #010754;
+  font-weight: 500;
+  -webkit-text-fill-color: #BDBDBD;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #010754;
 
 }
 
 #content_1 h1 {
   color: #BDBDBD;
   font-family: 'Montserrat', sans-serif;
+  /*color: black;*/
+-webkit-text-fill-color: #BDBDBD; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 2.5px;
+-webkit-text-stroke-color: black;
 }
 
 #content_2 {
@@ -182,6 +199,9 @@ h1 a {
 #content_2 h1 {
   color: #EEA990;
   font-family: 'Montserrat', sans-serif;
+  -webkit-text-fill-color: #EEA990; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #66545E;
 }
 
 #content_3 {
@@ -197,6 +217,9 @@ h1 a {
 #content_3 h1 {
   color: #FCF2D3;
   font-family: 'Montserrat', sans-serif;
+  -webkit-text-fill-color: #FCF2D3; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #E9B8BC;
 }
 
 h1::first-letter {
@@ -309,7 +332,27 @@ ul.project-container li:hover a .project-info .project-background {
 .contact-list li {
   margin-left: 10%;
   margin-top: 10px;
+  color: #E9B8BC;
+  font-size: 20px;
+  /*font-weight: 500;*/
+  -webkit-text-fill-color: #B6D8D7;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #E9B8BC;
+}
+
+.contact-list a {
+  color: #E9B8BC;
+  -webkit-text-fill-color: #B6D8D7;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #E9B8BC;
+}
+
+my-name {
   font-weight: 900;
+  font-size: 40px;
+  -webkit-text-fill-color: #E9B8BC;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #B6D8D7;
 }
 
 
