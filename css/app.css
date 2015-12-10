@@ -214,24 +214,27 @@ h1::first-letter {
   height: 200px;
 }
 
-ul {
-
+.project-wrap {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
 }
 
 ul.project-container {
-  width: 100%;
-  margin-top: 50px;
-  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 ul.project-container li {
   display: inline-block;
   position: relative;
-  margin-bottom: 50px;
-  text-align: center;
+  margin: 0 15px 21px 0;
   width: 200px;
   height: 200px;
-  margin: 0 15px 21px 0;
+  text-align: center;
 }
 
 ul.project-container li a .project-info {
@@ -263,28 +266,6 @@ span.about {
   font-size: 13px;
   font-style: italic;
 }
-
-/*ul.project-container li a .project-info .project-descrip span.link {
-  margin: 25px auto 0;
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: .75em;
-  color: white;
-  width: 120px;
-  padding: 5px;
-  border: 2px solid white;
-  -oz-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}*/
-
-/*ul.project-container li a .project-info .project-descrip span.link:hover {
-  background-color: white;
-  color: #4D84A6;
-  border: 2px solid white;
-}*/
 
 ul.project-container li a .project-info .project-background {
   position: absolute;
