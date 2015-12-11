@@ -183,6 +183,7 @@ h1 a {
 -webkit-text-fill-color: #BDBDBD; /* Will override color (regardless of order) */
 -webkit-text-stroke-width: 2.5px;
 -webkit-text-stroke-color: black;
+text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 #content_2 {
@@ -200,8 +201,10 @@ h1 a {
   color: #EEA990;
   font-family: 'Montserrat', sans-serif;
   -webkit-text-fill-color: #EEA990; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #66545E;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
 }
 
 #content_3 {
