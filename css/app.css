@@ -215,7 +215,7 @@ text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
      #B6D8D7,
      #FCF2D3 40%
    );
-   height: 500px;
+   height: 600px;
 
 }
 
@@ -329,14 +329,16 @@ ul.project-container li:hover a .project-info .project-background {
 /* Contact info */
 
 .contact-list {
-  text-align: left;
+  text-align: center;
   list-style-type: none;
   margin-top: 80px;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .contact-list li {
-  margin-left: 60%;
+  /*margin-left: 60%;*/
+  /*text-align: center;*/
+  display: inline-block;
   padding: 0;
   margin-top: 10px;
   width: 100%;
@@ -358,21 +360,25 @@ ul.project-container li:hover a .project-info .project-background {
 
 .content .photo-div img {
     /*display: block;*/
-    text-align: center;
+    /*text-align: center;*/
     max-width:230px;
     max-height:175px;
-    width: auto;
-    height: auto;
+    /*width: auto;
+    height: auto;*/
     /*float: right;*/
-    position: relative;
+    /*position: relative;*/
+    border-radius: 50%;
+    padding:2px;
+    border:2px solid #E9B8BC;
+    background-color:#B6D8D7;
 }
 
-.content .photo-div {
-  float: right;
+.content .photo-div img {
+  /*float: right;
   margin-right: 20%;
   position: relative;
   top: 100px;
-  display: inline-block;
+  display: inline-block;*/
 
 
 }
