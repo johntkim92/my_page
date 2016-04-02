@@ -1,42 +1,178 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <title><b>Tic Tac Toe</b></title>
-    <link rel="stylesheet" href="tic_tac_toe/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/jquery.stellar.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+
+    <title>John's Page</title>
   </head>
   <body>
-    <h1 class="rock-salt">Tic Tac Toe</h1>
-    <div id="wraps">
-      <button class="reset">Play Again</button>
-    </div>
-    <div class="instructions">Click a cell to begin the game!</div>
-    <div class="current-player">Current Player: X</div>
-    <div id="game-board">
-      <table class="full-block">
-        <tr class="row1">
-          <td id='0' class="cell"></td>
-          <td id='1' class="cell a"></td>
-          <td id='2' class="cell"></td>
-        </tr>
-        <tr class="row2">
-          <td id='3' class="cell b"></td>
-          <td id='4' class="cell a b"></td>
-          <td id='5' class="cell b"></td>
-        </tr>
-        <tr class="row3">
-          <td id='6' class="cell"></td>
-          <td id='7' class="cell a"></td>
-          <td id='8' class="cell"></td>
-        </tr>
-      </table>
+    <nav>
+      <div id="logo-name">
+        <img id="jtk" src="../my_page/images/new-jtk.png"/>
+      </div>
+      <ul>
+        <li class="nav-hover-slide"><a href="#about">ABOUT</a></li>
+        <li class="nav-hover-slide"><a href="#work">WORK</a></li>
+        <li class="nav-hover-slide"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
 
+    <!-- start of parallax -->
+
+
+     <div id="wall_1" class="image" data-stellar-background-ratio="0.5">
+       <h1 class="wall-h1"><a name="about">[ Welcome, My Name is John ]</h1>
+     </div>
+     <div id="content_1" class="content">
+         <h1><cont-1>F</cont-1>ull Stack Developer</h1>
+         <br/>
+         <br/>
+         <br/>
+         <p>I am a web developer based in New Jersey, and I love utilizing my creativity to build and create my own projects.</p>
+         <p>I worked for one year at Radio City Music Hall after graduating from Boston College with a marketing degree, before I began the Web Developent Immersive at General Assembly.</p>
+         <p>On my free time, I enjoy cooking, playing basketball, gaming, and exploring new music.</p>
+     </div>
+
+     <div id="wall_2" class="image" data-stellar-background-ratio="0.5">
+       <h1 class="wall-h1"><a name="work">[ Projects ]</h1>
+     </div>
+     <div id="content_2" class="content">
+       <h1><cont-2>W</cont-2>eb Design and Development</h1>
+       <div class="project-wrap">
+       <ul class="project-container">
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="project-info">
+              <div class="project-background"></div>
+              <div class="project-descrip">
+                <h5>TRAVEL DROP</h5>
+                <span class="about">
+                  Travel blog using Google Maps API. </br> [Ruby, Rails, Angular]
+                </span>
+                <!-- <span class="link">VIEW PROJECT</span> -->
+              </div>
+              <img src="../my_page/images/jtk.png"/>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="project-info">
+              <div class="project-background"></div>
+              <div class="project-descrip">
+                <h5>CASHBOOK</h5>
+                <span class="about">
+                  CRUD app to record personal finances. </br> [Ruby, Rails]
+                </span>
+                <!-- <span class="link">VIEW PROJECT</span> -->
+              </div>
+              <img src="../my_page/images/jtk.png"/>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="project-info">
+              <div class="project-background"></div>
+              <div class="project-descrip">
+                <h5>TO-DOODLES</h5>
+                <span class="about">
+                  Single page app to track progress on tasks.</br> [MEAN stack]
+                </span>
+                <!-- <span class="link">VIEW PROJECT</span> -->
+              </div>
+              <img src="../my_page/images/jtk.png"/>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="project-info">
+              <div class="project-background"></div>
+              <div class="project-descrip">
+                <h5>GALLERIA</h5>
+                <span class="about">
+                  Basic Reddit clone to post and discuss about anything.</br> [JS, Node, Express, Mongo]
+                </span>
+                <!-- <span class="link">VIEW PROJECT</span> -->
+              </div>
+              <img src="../my_page/images/jtk.png"/>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="project-info">
+              <div class="project-background"></div>
+              <div class="project-descrip">
+                <h5>YODA-BLOGGER</h5>
+                <span class="about">
+                  Simple single page app using various APIs.</br>[Ruby, Rails, Angular]
+                </span>
+                <!-- <span class="link">VIEW PROJECT</span> -->
+              </div>
+              <img src="../my_page/images/jtk.png"/>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <div class="project-info">
+              <div class="project-background"></div>
+              <div class="project-descrip">
+                <h5>TIC TAC TOE</h5>
+                <span class="about">
+                  Classic game of Tic Tac Toe.</br>[JS, JQuery, HTML5/CSS]
+                </span>
+                <!-- <span class="link">VIEW PROJECT</span> -->
+              </div>
+              <img src="../my_page/images/jtk.png"/>
+            </div>
+          </a>
+        </li>
+
+      </ul>
     </div>
-    <audio src="https://raw.githubusercontent.com/johntkim92/johntkim92.github.io/master/KakarikoVillage.mp3" controls></audio>
-    <script src="tic_tac_toe/tictactoe.js"></script>
+
+
+     </div>
+     <div id="wall_3" class="image" data-stellar-background-ratio="0.5">
+       <h1 class="wall-h1"><a name="contact">[ Contact Info ]</h1>
+     </div>
+     <div id="content_3" class="content">
+
+         <h1><cont-3>G</cont-3>et in Touch</h1>
+         <ul class="contact-list">
+           <div class="photo-div">
+             <li><img src="../my_page/images/me.jpg"/></li>
+           </div>
+           <li><my-name>JOHN KIM</my-name></li>
+           <li><a href="mailto:johntkim92@gmail.com">johntkim92@gmail.com</a></li>
+           <li><a href="https://github.com/johntkim92">GitHub</a></li>
+           <li><a href="https://www.linkedin.com/in/johnkimcodes">LinkedIn</a></li>
+         </ul>
+         <!-- <div class="photo-div">
+           <img src="../my_page/images/me.jpg"/>
+         </div> -->
+     </div>
+
+    <!-- end of parallax  -->
+
+    <script src="app.js"></script>
+
   </body>
 </html>
