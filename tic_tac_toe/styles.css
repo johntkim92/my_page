@@ -1,15 +1,80 @@
-body {
-  background-color: #98FB98;
+@import url(https:fonts.googleapis.com/css?family=Oxygen:700,400,300|Raleway:500,100,400,200,300);
+
+
+* {
+  font: inherit;
+  box-sizing: border-box;
+  -oz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
-.rock-salt {
-  font-family: 'Rock Salt', cursive;
+
+html {
+  font-size: 1em;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+.raleway {
+  /*font-family: 'Rock Salt', cursive;*/
+  /*font-family: 'Crafty Girls', cursive;*/
+
   color: #FF1493;
   text-align: center;
   font-size: 3.5em;
   padding: 0.1em;
   margin: 0;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
 }
+
+.raleway span:first-child {
+  color: #C80043
+}
+
+.raleway span:nth-child(2) {
+  color: #1F92CC;
+  /*font-size: 0.8em;*/
+}
+
+.raleway span:nth-child(3) {
+  color: #F7BC25;
+  /*font-size: 0.5em;*/
+
+}
+
+.raleway span:nth-child(4) {
+  color: #C80043
+}
+
+.raleway span:nth-child(5) {
+  color: #1F92CC;
+  font-size: 0.5em;
+}
+
+.raleway span:nth-child(6) {
+  color: #F7BC25;
+  /*font-size: 0.5em;*/
+
+}
+
+.raleway span:nth-child(7) {
+  color: #C80043
+}
+
+.raleway span:nth-child(8) {
+  color: #1F92CC;
+  font-size: 0.5em;
+}
+
+.raleway span:nth-child(9) {
+  color: #F7BC25;
+  /*font-size: 0.5em;*/
+
+}
+
 #wraps {
   text-align: center;
 }
@@ -18,8 +83,8 @@ body {
   text-align: center;
   padding: 0.1em;
   margin: 0;
-  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-               0px -5px 35px rgba(255,255,255,0.3);
+  /*text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);*/
   font-size: 1.1em;
 }
 
@@ -27,16 +92,18 @@ body {
   text-align: center;
   padding: 0.1em;
   margin: 0;
-  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-               0px -5px 35px rgba(255,255,255,0.3);
+  /*text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);*/
   font-size: 1.1em;
 }
 
 .full-block {
   margin: 0 auto;
-  font-family: 'Crafty Girls', cursive;
+  /*font-family: 'Crafty Girls', cursive;*/
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   font-size: 4em;
-  color: yellow;
+  color: #F7BC25;
   padding: 0.3em;
 }
 
@@ -44,9 +111,9 @@ body {
   width: 2em;
   height: 2em;
   text-align: center;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  /*text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+             0px 18px 23px rgba(0,0,0,0.1);*/
   transition: background 1s linear;
 }
 .cell:hover {
@@ -54,65 +121,52 @@ body {
   opacity: 0.8;
 }
 .a {
-  border-left: 0.09em solid #800080;
-  border-right: 0.09em solid #800080;
+  border-left: 0.09em solid #C80043;
+  border-right: 0.09em solid #C80043;
+  border-radius: 5px;
 }
 .b {
-  border-top: 0.09em solid #9400D3;
-  border-bottom: 0.09em solid #9400D3;
+  border-top: 0.09em solid #C80043;
+  border-bottom: 0.09em solid #C80043;
 }
 .instructions, .current-player {
-  font-family: 'Black Ops One', cursive;
-  color: #B213A0;
+  /*font-family: 'Crafty Girls', cursive;*/
+  /*font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+
+  color: #C80043;
   margin: 0.8em;
 }
 
 .highlight {
-  color: #00FFFF;
+  color: #1F92CC;
 }
 
-.reset {
-	-moz-box-shadow:inset 0px 1px 0px 0px #fbafe3;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #fbafe3;
-	box-shadow:inset 0px 1px 0px 0px #fbafe3;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d));
-	background:-moz-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-	background:-webkit-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-	background:-o-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-	background:-ms-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
-	background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d',GradientType=0);
-	background-color:#ff5bb0;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #ee1eb5;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-  font-family: 'Crafty Girls', cursive;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #c70067;
-  margin: 0 auto;
-  position: relative;
+
+
+button {
+  margin-top: 15px;
+	border: none;
+	padding: 0.6em 1.2em;
+	background-color: #C80043;
+	color: white;
+	font-size: 1em;
+	letter-spacing: 1px;
+	cursor: pointer;
+	display: inline-block;
+  transition: all .25s ease-in-out;
 }
-.reset:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0));
-	background:-moz-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-	background:-webkit-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-	background:-o-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-	background:-ms-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
-	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0',GradientType=0);
-	background-color:#ef027d;
+
+button:hover {
+	/*background: #ee4c83;*/
+  -webkit-box-shadow: 2px 4px 14px -1px rgba(0,0,0,0.50);
+  -moz-box-shadow: 2px 4px 14px -1px rgba(0,0,0,0.50);
+  box-shadow: 2px 4px 14px -1px rgba(0,0,0,0.50);
 }
-.reset:active {
-	position:relative;
-	top:1px;
+
+button:focus {
+ outline: none;
 }
+
 audio {
   background-color: #00FFFF;
 }
