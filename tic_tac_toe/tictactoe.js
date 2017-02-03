@@ -12,44 +12,93 @@ var wins = [
 
 var highlightWinner = function () {
   if (($('#0').text() === 'X' && $('#1').text() === 'X' && $('#2').text() === 'X') || (($('#0').text() === 'O' && $('#1').text() === 'O' && $('#2').text() === 'O')))           {
-    $('#0').addClass('highlight');
-    $('#1').addClass('highlight');
-    $('#2').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#0').children().addClass('highlight animated infinite zoomIn');
+        $('#1').children().addClass('highlight animated infinite zoomIn');
+        $('#2').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+
+    // $('#0').children().addClass('highlight animated pulse');
+    // $('#1').children().addClass('highlight animated pulse');
+    // $('#2').children().addClass('highlight animated pulse');
   } else if (($('#3').text() === 'X' && $('#4').text() === 'X' && $('#5').text() === 'X') || (($('#3').text() === 'O' && $('#4').text() === 'O' && $('#5').text() === 'O')))
   {
-    $('#3').addClass('highlight');
-    $('#4').addClass('highlight');
-    $('#5').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#3').children().addClass('highlight animated infinite zoomIn');
+        $('#4').children().addClass('highlight animated infinite zoomIn');
+        $('#5').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#3').children().addClass('highlight pulse');
+    // $('#4').children().addClass('highlight pulse');
+    // $('#5').children().addClass('highlight pulse');
   } else if (($('#6').text() === 'X' && $('#7').text() === 'X' && $('#8').text() === 'X') || (($('#6').text() === 'O' && $('#7').text() === 'O' && $('#8').text() === 'O')))
   {
-    $('#6').addClass('highlight');
-    $('#7').addClass('highlight');
-    $('#8').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#6').children().addClass('highlight animated infinite zoomIn');
+        $('#7').children().addClass('highlight animated infinite zoomIn');
+        $('#8').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#6').children().addClass('highlight pulse');
+    // $('#7').children().addClass('highlight pulse');
+    // $('#8').children().addClass('highlight pulse');
   } else if (($('#0').text() === 'X' && $('#3').text() === 'X' && $('#6').text() === 'X') || (($('#0').text() === 'O' && $('#3').text() === 'O' && $('#6').text() === 'O')))
   {
-    $('#0').addClass('highlight');
-    $('#3').addClass('highlight');
-    $('#6').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#0').children().addClass('highlight animated infinite zoomIn');
+        $('#3').children().addClass('highlight animated infinite zoomIn');
+        $('#6').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#0').children().addClass('highlight pulse');
+    // $('#3').children().addClass('highlight pulse');
+    // $('#6').children().addClass('highlight pulse');
   } else if (($('#1').text() === 'X' && $('#4').text() === 'X' && $('#7').text() === 'X') || (($('#1').text() === 'O' && $('#4').text() === 'O' && $('#7').text() === 'O')))
   {
-    $('#1').addClass('highlight');
-    $('#4').addClass('highlight');
-    $('#7').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#1').children().addClass('highlight animated infinite zoomIn');
+        $('#4').children().addClass('highlight animated infinite zoomIn');
+        $('#7').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#1').children().addClass('highlight pulse');
+    // $('#4').children().addClass('highlight pulse');
+    // $('#7').children().addClass('highlight pulse');
   } else if (($('#2').text() === 'X' && $('#5').text() === 'X' && $('#8').text() === 'X') || (($('#2').text() === 'O' && $('#5').text() === 'O' && $('#8').text() === 'O')))
   {
-    $('#2').addClass('highlight');
-    $('#5').addClass('highlight');
-    $('#8').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#2').children().addClass('highlight animated infinite zoomIn');
+        $('#5').children().addClass('highlight animated infinite zoomIn');
+        $('#8').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#2').children().addClass('highlight pulse');
+    // $('#5').children().addClass('highlight pulse');
+    // $('#8').children().addClass('highlight pulse');
   } else if (($('#0').text() === 'X' && $('#4').text() === 'X' && $('#8').text() === 'X') || (($('#0').text() === 'O' && $('#4').text() === 'O' && $('#8').text() === 'O')))
   {
-    $('#0').addClass('highlight');
-    $('#4').addClass('highlight');
-    $('#8').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#0').children().addClass('highlight animated infinite zoomIn');
+        $('#4').children().addClass('highlight animated infinite zoomIn');
+        $('#8').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#0').children().addClass('highlight pulse');
+    // $('#4').children().addClass('highlight pulse');
+    // $('#8').children().addClass('highlight pulse');
   } else if (($('#2').text() === 'X' && $('#4').text() === 'X' && $('#6').text() === 'X') || (($('#2').text() === 'O' && $('#4').text() === 'O' && $('#6').text() === 'O')))
   {
-    $('#2').addClass('highlight');
-    $('#4').addClass('highlight');
-    $('#6').addClass('highlight');
+    $('td').children().toggleClass('animated zoomIn');
+    setTimeout(function(){
+        $('#2').children().addClass('highlight animated infinite zoomIn');
+        $('#4').children().addClass('highlight animated infinite zoomIn');
+        $('#6').children().addClass('highlight animated infinite zoomIn');
+      }, 100);
+    // $('#2').children().addClass('highlight pulse');
+    // $('#4').children().addClass('highlight pulse');
+    // $('#6').children().addClass('highlight pulse');
   }
 };
 
@@ -68,8 +117,13 @@ var game = {
     var cell = $('.cell');
     cell.click(function (event) {
       var target = $(event.target);
+      target.children().addClass("animated zoomIn");
+      // target.addClass("animated zoomIn");
+
       if (clicks === 0 || clicks%2 === 0) {
-        target.text('X');
+        target.children().text('X');
+        // target.text('X');
+
         clicks += 1;
         $('.current-player').text('Current Player: O');
         $('.instructions').text(' ');
@@ -174,7 +228,9 @@ var game = {
           }
         };
       } else {
-        target.text('O');
+        // target.text('O');
+        target.children().text('O');
+
         clicks += 1;
         $('.current-player').text('Current Player: X');
         $('.instructions').text(' ');
@@ -309,15 +365,6 @@ var reset = {
       window.location.reload();
     });
   },
-
-
-
-
-
-
-
-
-
 
 
 
