@@ -36,7 +36,7 @@ body {
 
 .raleway span:nth-child(2) {
   color: #1F92CC;
-  /*font-size: 0.8em;*/
+  font-size: 0.8em;
 }
 
 .raleway span:nth-child(3) {
@@ -51,7 +51,7 @@ body {
 
 .raleway span:nth-child(5) {
   color: #1F92CC;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 
 .raleway span:nth-child(6) {
@@ -66,7 +66,7 @@ body {
 
 .raleway span:nth-child(8) {
   color: #1F92CC;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 
 .raleway span:nth-child(9) {
@@ -116,10 +116,12 @@ body {
              0px 18px 23px rgba(0,0,0,0.1);*/
   transition: background 1s linear;
 }
-.cell:hover {
+
+/*.cell:hover {
   background-color: #00FA9A;
   opacity: 0.8;
-}
+}*/
+
 .a {
   border-left: 0.09em solid #C80043;
   border-right: 0.09em solid #C80043;
@@ -128,12 +130,15 @@ body {
 .b {
   border-top: 0.09em solid #C80043;
   border-bottom: 0.09em solid #C80043;
+  border-radius: 5px;
+
 }
 .instructions, .current-player {
   /*font-family: 'Crafty Girls', cursive;*/
   /*font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 
-  color: #C80043;
+  /*color: #C80043;*/
+  color: #1F92CC;
   margin: 0.8em;
 }
 
@@ -165,8 +170,4 @@ button:hover {
 
 button:focus {
  outline: none;
-}
-
-audio {
-  background-color: #00FFFF;
 }
